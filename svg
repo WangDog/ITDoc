@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .line-wrap {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .circle-load-rect-svg {
+        margin: 10px;
+    }
+
+    .g-rect-path {
+        fill: none;
+        stroke-width: 10;
+        stroke: #d3dce6;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+    }
+
+    .g-rect-fill {
+        fill: none;
+        stroke-width: 10;
+        stroke: #ff7700;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        stroke-dasharray: 0, 1370;
+        stroke-dashoffset: 0;
+        animation: lineMove 2s ease-out infinite;
+    }
+
+    @keyframes lineMove {
+        0% {
+            stroke-dasharray: 0, 1350;
+        }
+        100% {
+            stroke-dasharray: 1350, 1350;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <svg id="svg" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+        <g>
+            <title>Layer 1</title>
+            <rect rx="6" id="svg_1" height="36" width="12" y="123.9" x="180.5" stroke-width="1.5" stroke="#FFBCBD" fill="#FFBCBD">
+                <animate id="rect_1" attributeName="y" from="123.9" by="-40" begin="indefinite" dur=".3s"/>
+                <animate attributeName="height" from="36" to="20" begin="rect_1.begin + .2s" dur=".2s"/>
+                <animate attributeName="opacity" from="1" to="0" begin="rect_1.begin + .2s" dur=".3s"/>
+            </rect>
+            <rect rx="6" transform="rotate(43 209.50000000000003,149.89999389648435) " stroke="#FFBCBD" id="svg_2" height="36" width="12" y="131.9" x="203.5" stroke-width="1.5" fill="#FFBCBD">
+                <animate attributeName="y" from="123.9" by="-40" begin="rect_1.begin" dur=".3s"/>
+                <animate attributeName="height" from="36" to="20" begin="rect_1.begin + .2s" dur=".2s"/>
+                <animate attributeName="opacity" from="1" to="0" begin="rect_1.begin + .2s" dur=".3s"/>
+            </rect>
+            <rect rx="6" transform="rotate(90 217.5,173.8999938964844)" id="svg_3" height="36" width="12" y="153.9" x="211.5" stroke-width="1.5" stroke="#FFBCBD" fill="#FFBCBD">
+                <animate attributeName="y" from="153.9" by="-40" begin="rect_1.begin" dur=".3s"/>
+                <animate attributeName="height" from="36" to="20" begin="rect_1.begin + .2s" dur=".2s"/>
+                <animate attributeName="opacity" from="1" to="0" begin="rect_1.begin + .2s" dur=".3s"/>
+            </rect>
+            <rect rx="6" stroke="#FFBCBD" transform="rotate(-45 208.49999999999986,195.89999389648432) " id="svg_4" height="36" width="12" y="177.9" x="202.5" stroke-width="1.5" fill="#FFBCBD">
+                <animate attributeName="y" from="185.9" by="40" begin="rect_1.begin" dur=".3s"/>
+                <animate attributeName="height" from="36" to="20" begin="rect_1.begin + .2s" dur=".2s"/>
+                <animate attributeName="opacity" from="1" to="0" begin="rect_1.begin + .2s" dur=".3s"/>
+            </rect>
+            <rect rx="6" id="svg_5" height="36" width="12" y="186.5" x="180.5" stroke-width="1.5" stroke="#FFBCBD" fill="#FFBCBD">
+                <animate attributeName="y" from="186.9" by="40" begin="rect_1.begin" dur=".3s"/>
+                <animate attributeName="height" from="36" to="20" begin="rect_1.begin + .2s" dur=".2s"/>
+                <animate attributeName="opacity" from="1" to="0" begin="rect_1.begin + .2s" dur=".3s"/>
+            </rect>
+            <rect rx="6" transform="rotate(43 161.50000000000003,195.89999389648438) " stroke="#FFBCBD" id="svg_6" height="36" width="12" y="177.9" x="155.5" stroke-width="1.5" fill="#FFBCBD">
+                <animate attributeName="y" from="177.9" by="40" begin="rect_1.begin" dur=".3s"/>
+                <animate attributeName="height" from="36" to="20" begin="rect_1.begin + .2s" dur=".2s"/>
+                <animate attributeName="opacity" from="1" to="0" begin="rect_1.begin + .2s" dur=".3s"/>
+            </rect>
+            <rect rx="6" transform="rotate(90 153.5,171.8999938964844) " id="svg_7" height="36" width="12" y="153.9" x="147.5" stroke-width="1.5" stroke="#FFBCBD" fill="#FFBCBD">
+                <animate attributeName="y" from="153.9" by="40" begin="rect_1.begin" dur=".3s"/>
+                <animate attributeName="height" from="36" to="20" begin="rect_1.begin + .2s" dur=".2s"/>
+                <animate attributeName="opacity" from="1" to="0" begin="rect_1.begin + .2s" dur=".3s"/>
+            </rect>
+            <rect rx="6" stroke="#FFBCBD" transform="rotate(-45 163.49999999999994,149.89999389648435) " id="svg_8" height="36" width="12" y="131.9" x="157.5" stroke-width="1.5" fill="#FFBCBD">
+                <animate attributeName="y" from="131.9" by="-40" begin="rect_1.begin" dur=".3s"/>
+                <animate attributeName="height" from="36" to="20" begin="rect_1.begin + .2s" dur=".2s"/>
+                <animate attributeName="opacity" from="1" to="0" begin="rect_1.begin + .2s" dur=".3s"/>
+            </rect>
+        </g>
+    </svg>
+    <div class="container">
+<!--         <div class="line-wrap">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="circle-load-rect-svg" width="300" height="200" viewbox="0 0 600 400">
+                <polyline points="5 5, 575 5, 575 200, 5 200" fill="none" class="g-rect-path" />
+                <polyline points="5 5, 575 5, 575 200, 5 200" fill="none" class="g-rect-fill" />
+            </svg>
+        </div> -->
+    </div>
+</body>
+<script>
+var animate = document.getElementsByTagName("animate")[0];
+document.getElementById("svg").onclick = function() { animate.beginElement();
+    console.log("111"); };
+</script>
+
+</html>
